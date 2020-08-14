@@ -1,0 +1,22 @@
+<h2> Add Contact </h2>
+
+<div><span class="badge">Contact Name : </span> 
+	<input #contactName placeholder="Name" />
+</div>
+
+<div><span class="badge">Phone Number : </span> 
+	<input #contactNumber placeholder="Phone number" />
+</div>
+
+<div><span class="badge">Email Address : </span>
+	<input #contactEmail placeholder="Email Address" />
+</div>
+	
+<div><span class="badge">Birthday : </span>
+	<input type='date' #contactBirthday placeholder="Birthday" />
+</div>
+
+<div>
+	<span><button (click)="goBack()"> Back </button></span>
+	<span><a routerLink='/contacts'><button (click)="addContact(contactName.value, contactNumber.value, contactEmail.value, contactBirthday.value); contactName.value=''; contactNumber.value=''; contactEmail.value=''; contactBirthday.value=''"> Add </button></a></span>
+</div>

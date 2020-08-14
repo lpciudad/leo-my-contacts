@@ -1,0 +1,8 @@
+<h1>My Contacts </h1>
+<nav>
+	<a routerLink='/contacts'> My Contacts </a>
+	<a routerLink='/add-contact'> Add Contact </a>
+</nav>
+
+<button *ngIf="showButton" (click)="addToHomeScreen()"> Add to Home Screen </button>
+<router-outlet></router-outlet>

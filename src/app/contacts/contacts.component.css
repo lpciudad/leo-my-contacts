@@ -1,0 +1,74 @@
+/* ContactsComponent's private CSS styles */
+.contacts {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.contacts li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  width: max-content;
+}
+.contacts li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.contacts li.selected {
+  background-color: #CFD8DC;
+  color: white;
+}
+.contacts li.selected:hover {
+  background-color: #BBD8DC;
+  color: white;
+}
+.contacts .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #006666;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: gray !important;
+  color: white;
+}
+
+button.delete {
+  background-color: #e6e6e6 !important;
+  color: black;
+  left: 30px;
+  bottom: 5px;
+  position:relative;
+}
+
+
+button.delete:hover {
+    background-color: gray !important;
+    color: #EEE;
+}
